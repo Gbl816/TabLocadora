@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tela de Login</title>
+        <link rel="stylesheet" type="text/css" href="styles/style.css">
+    </head>
+    <body>
+        <div class="Login">
+            <h1>Login</h1>
+        <form onsubmit="redirectToPage(event)">
+            <input type="text" id="username" placeholder="Usuario"  name="username" required>
+            <br><br>
+            <input type="password" id="password" placeholder="Senha" name="password" required>
+            <br><br>
+            <button type="submit">Login</button>
+
+        </form>
+        </div>
+    </body>
+</html>
+    <script>
+        function redirectToPage(event) {
+            event.preventDefault(); 
+            window.location.href = 'pagina1.html'; 
+
+        }
+    </script>
